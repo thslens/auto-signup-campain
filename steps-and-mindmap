@@ -1,0 +1,15 @@
+1. Log into Lazada
+2. Go to campaign page
+3. View all campaigns
+4. Find which campaigns are “available” tag
+    1. From the “available campaign“ tag, 
+        loop through them and find the voucher campaign ( cong voucher ) tag
+    2. Loop through the voucher Campaign tag
+        1. if the dialog appears click “ Lưu “
+        2. click the first Promotion and join Now
+        3. If meet condition, click “Tham gia ngay“
+        4. sign up by fill up in PLACEHOLDER ( follow pic 11)
+        5. submit
+note :  black number around a picture showed name of the pic file
+& steps when i opend it on website 
+https://www.canva.com/design/DAFmtXlpTyE/v1994urgXYiA6L8cbG_12g/edit?utm_content=DAFmtXlpTyE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
