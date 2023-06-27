@@ -47,34 +47,34 @@ if __name__ == '__main__':
 		campaigns = find_each_campaign.find_elements(By.XPATH, '//div[@data-spm="master_card"]')
 		
 			# Loop through the list campaign voucher array & click the first campaign
-		for campaign in campaigns:
-			try:
-				campaign.click()
-			except:
-				pass
-			time.sleep(2)
-			# find "Cổng voucher" element is present then click
-			find_gate_voucher_tab = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, '//div/ul/li/div[text()="Cổng voucher"]')))
-			find_gate_voucher_tab.click()
+	for campaign in campaigns:
+		try:
+			campaign.click()
+		except:
+			pass
+		time.sleep(2)
+		# find "Cổng voucher" element is present then click
+		find_gate_voucher_tab = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, '//div/ul/li/div[text()="Cổng voucher"]')))
+		find_gate_voucher_tab.click()
 
-			# in "Cổng voucher" Find the whole campaigns array
-			gate_voucher_whole_campaigns = browser.find_elements(By.CSS_SELECTOR, "div.aplus-module-auto-exp > div")
-   
-			# Loop through the "Cổng voucher" campaign array
-			for find_each_campaign_in_gate in gate_voucher_whole_campaigns:
+		# in "Cổng voucher" Find the whole campaigns array
+		gate_voucher_whole_campaigns = browser.find_elements(By.CSS_SELECTOR, "div.aplus-module-auto-exp > div")
 
-				# Find list the campaign voucher in the array
-				campaigns = find_each_campaign_in_gate.find_elements(By.XPATH, '//div[@data-spm="scene_card"]')
-				
-					# Loop through the list campaign voucher array & click the first campaign
-				for campaign in campaigns:
-      
-      
-      
-      
-					try:
-						campaign.click()
-					except:
-						pass
-					time.sleep(2)
+		# Loop through the "Cổng voucher" campaign array
+		for find_each_campaign_in_gate in gate_voucher_whole_campaigns:
+
+			# Find list the campaign voucher in the array
+			campaigns = find_each_campaign_in_gate.find_elements(By.XPATH, '//div[@data-spm="scene_card"]')
 			
+				# Loop through the list campaign voucher array & click the first campaign
+			for campaign in campaigns:
+
+
+
+
+				try:
+					campaign.click()
+				except:
+					pass
+				time.sleep(2)
+		
