@@ -8,7 +8,7 @@ import time
 
 if __name__ == '__main__':
 	email = "Pimoni94@gmail.com"
-	password = "Thaothao090311@"
+	password = ""
 
 	options = webdriver.ChromeOptions()
 	#options.add_argument('proxy-server=106.122.8.54:3128')
